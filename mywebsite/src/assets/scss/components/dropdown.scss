@@ -1,0 +1,27 @@
+$dropdown-background: #2c3840;
+$dropdown-text-color: $white;
+$dropdown-transition: opacity,0.5s,ease-in-out;
+
+.dropdown-pane {
+  background-color: $dropdown-background;
+  color: $dropdown-text-color;
+  min-width: 200px;
+  
+
+
+  a{
+    color: $dropdown-text-color;
+
+    &:hover {
+      color: darken($dropdown-text-color,25%);
+    }
+  }
+
+
+
+  .menu {
+    background-color: $dropdown-background;
+
+
+  }
+}

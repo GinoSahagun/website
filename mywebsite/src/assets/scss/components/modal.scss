@@ -1,0 +1,28 @@
+$nav-text-color: $white;
+$nav-height: 75px;
+$nav-background: #2c3840;
+$offcanvas-padding: 20px;
+$entire-background: #66A5AD;
+$entire-text-color: #003B46;
+$summary-background:  #66A5AD;
+$skills-background: #07575B;
+$project-background: #2C7873;
+
+
+.modal {
+  background-color: $nav-background;
+  color: $white;
+
+  form {
+    color: $white;
+    label{
+      color: $white;
+    }
+  }
+}
+
+.close-button{
+  &:hover{
+    color: $white;
+  }
+}

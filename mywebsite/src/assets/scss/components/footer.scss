@@ -1,0 +1,85 @@
+$footer-background: #07575B;
+$nav-text-color: $white;
+$nav-height: 75px;
+$nav-background: #2c3840;
+$offcanvas-padding: 20px;
+$entire-background: #66A5AD;
+$entire-text-color: #003B46;
+$summary-background: #66A5AD;
+$skills-background: #07575B;
+$project-background: #2C7873;
+
+
+.property-info {
+  img{
+    height: 75px;
+    margin-bottom: 20px;
+  }
+}
+@mixin background-links ($image) {
+  background: url($image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+  z-index: 100;
+}
+
+.footer {
+  bottom: 0;
+  background-color: $footer-background;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 75px;
+}
+
+.normal-links {
+  img{
+    height: 75px;
+    margin-bottom: 20px;
+  }
+  .links {
+    border-left: 1px solid hsla(0,0%,100%,.2);
+    height: 220px;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 5;
+    top: 25%;
+    a {
+      color: lighten($nav-background, 45%);
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: #4ec6cd;
+      }
+    }
+
+    /*
+    &.update {
+      @include background-links("../img/plane.jpg");
+    }
+
+    &.email {
+
+      @include background-links("../img/email.ico");
+    }
+    */
+  }
+}
+
+.button.secondary {
+  background: $nav-background;
+}
+
+footer {
+  background: $nav-background;
+  text-align: center;
+  padding: 0.5rem 0;
+  p{
+    margin-bottom: 0;
+  }
+}

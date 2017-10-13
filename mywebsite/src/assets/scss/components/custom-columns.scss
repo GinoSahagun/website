@@ -1,0 +1,13 @@
+.main-content {
+  // Use the full column count (100%)
+  @include grid-column;
+
+  // Use a column count (33%);
+  @include grid-column(4);
+
+  // Use a percentage (15%)
+  @include grid-column(15%);
+
+  // Use a custom fraction (20%)
+  @include grid-column(1 of 5);
+}

@@ -1,0 +1,83 @@
+$nav-text-color: white;
+$nav-height: 75px;
+$nav-background: #2c3840;
+$offcanvas-padding: 20px;
+$entire-background: #66A5AD;
+$entire-text-color: #003B46;
+$summary-background:  #66A5AD;
+$skills-background: #07575B;
+$project-background: #2C7873;
+
+
+
+body {
+  color: white;
+  
+}
+@include breakpoint (medium){
+  $tile-padding : 25px;
+.container {
+  background-color: $summary-background;
+  color: $nav-text-color;
+
+}
+/*background colors for rows*/
+.summary {
+
+  background-color: $summary-background;
+  padding: $tile-padding;
+}
+.skills {
+
+  background-color: darken($summary-background,15%);
+  padding: $tile-padding;
+}
+.project {
+
+  background-color: darken($summary-background,20%);
+  padding: $tile-padding;
+
+}
+}
+hr {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0;
+    margin-right: 0;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+}
+
+  @include breakpoint (small only) {
+    $tile-padding : 10px;
+    .container {
+  background-color: $summary-background;
+  color: $nav-text-color;
+
+}
+/*background colors for rows*/
+.summary {
+
+  background-color: $summary-background;
+  padding: $tile-padding;
+  margin-top: 45px;
+}
+.skills {
+
+  background-color: darken($summary-background,15%);
+  padding: $tile-padding;
+}
+.project {
+
+  background-color: darken($summary-background,20%);
+  padding: $tile-padding;
+
+}
+body{
+      font-size: 14px;
+}
+    
+}
